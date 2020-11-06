@@ -1,31 +1,39 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .highlight{
     background-color:#ff715b;
 }
 
-body{
-    
+body{    
     display: flex;
     justify-content: center;
 }
 
 .search-form{
-    background-color: #1ea896 ;
+    background-color: #1e6262 ;
     padding: 0px 20px;
     color: white; 
     font-size: 20px;
+    height: 40vh;
+    width: 25vw;
      
 }
 input{
     width: 100%;
-    margin-top: 20%;
     padding: 5px;
     font-size: 20px;
     text-align: center;
-    border-bottom-left-radius: 5px;
+    /* border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 1px solid #999;
+    border-top-right-radius: 5px; */
+    border: none;
+    border-radius: 4px;
+    background-color: #ecfffb;
+    z-index: 0;
+    outline: none;
 }
 
 ul{
@@ -36,7 +44,10 @@ ul{
 input::placeholder{
     opacity: 1;
     color:#999;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:hover{
+    border: none;
 }
 
 li{
@@ -44,9 +55,14 @@ li{
     color: white;
     padding: 3%;
     list-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 1px solid white;
     border-radius: 5px;
     font-size: 15px;
     
+}
+
+.suggestions{
+    position: relative;
+    z-index: 99;
+    background-color: #1e6262 ;
 }
